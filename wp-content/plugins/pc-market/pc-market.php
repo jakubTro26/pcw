@@ -52,11 +52,7 @@ function mt_toplevel_page() {
         function register_js_files() {
 
             wp_enqueue_script("my_ajax_script", get_template_directory_uri() . "/script.js");
-            wp_localize_script("my_ajax_script", "php_vars", array(
-                  "ajaxurl" => site_url() . '/wp-content/plugins/pc-market/import_one.php',
-                  "another_var" => get_bloginfo("name")
-                )
-              );
+          
           }
           add_action("wp_enqueue_scripts", "register_js_files");
       //  wp_enqueue_script( 'custom-javascript', site_url() . '/wp-content/plugins/pc-market/import.js' );
