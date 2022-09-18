@@ -2,8 +2,8 @@
 ini_set('max_execution_time', '600');
 set_time_limit(600);
 
-define( 'WC_ABSPATH', '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/' );
-define( 'ABSPATH', '/home4/smakolyk/public_html/pcwordpress/' );
+//define( 'WC_ABSPATH', '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/' );
+//define( 'ABSPATH', '/home4/smakolyk/public_html/pcwordpress/' );
 
 	 function do_ajax_product_import($file) {
 		global $wpdb;
@@ -17,10 +17,10 @@ define( 'ABSPATH', '/home4/smakolyk/public_html/pcwordpress/' );
 		// if ( ! $this->import_allowed() || ! isset( $_POST['file'] ) ) { // PHPCS: input var ok.
 		// 	wp_send_json_error( array( 'message' => __( 'Insufficient privileges to import products.', 'woocommerce' ) ) );
 		// }
-		include_once ABSPATH . 'wp-includes/functions.php';
-		include_once ABSPATH . 'wp-content/plugins/woocommerce/src/Proxies/ActionsProxy.php';
+		//include_once ABSPATH . 'wp-includes/functions.php';
+		//include_once ABSPATH . 'wp-content/plugins/woocommerce/src/Proxies/ActionsProxy.php';
 		//require ABSPATH . 'wp-admin/includes/noop.php';
-		include_once ABSPATH . 'wp-includes/plugin.php';
+		//include_once ABSPATH . 'wp-includes/plugin.php';
 		include_once WC_ABSPATH . 'includes/admin/importers/class-wc-product-csv-importer-controller.php';
 		include_once WC_ABSPATH . 'includes/import/class-wc-product-csv-importer.php';
         
