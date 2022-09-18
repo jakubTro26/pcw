@@ -204,12 +204,7 @@ if($action=='echo'){
  if($action=='abs'){
 
 
-    global $wp_scripts;
-    echo "<h2>Enqueued JS Scripts</h2><ul>";
-    foreach( $wp_scripts->queue as $handle ) :
-        echo "<li>" . $handle . "</li>";
-    endforeach;
-    echo "</ul>";
+   var_dump(ABSPATH);
 
 
 
