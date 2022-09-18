@@ -21,6 +21,7 @@ set_time_limit(600);
 		//include_once ABSPATH . 'wp-content/plugins/woocommerce/src/Proxies/ActionsProxy.php';
 		//require ABSPATH . 'wp-admin/includes/noop.php';
 		//include_once ABSPATH . 'wp-includes/plugin.php';
+		include_once '/home4/smakolyk/public_html/pcwordpress/wp-load.php';
 		include_once WC_ABSPATH . 'includes/admin/importers/class-wc-product-csv-importer-controller.php';
 		include_once WC_ABSPATH . 'includes/import/class-wc-product-csv-importer.php';
         
