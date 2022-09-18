@@ -17,7 +17,7 @@ define( 'ABSPATH', '/home4/smakolyk/public_html/pcwordpress/' );
 		// if ( ! $this->import_allowed() || ! isset( $_POST['file'] ) ) { // PHPCS: input var ok.
 		// 	wp_send_json_error( array( 'message' => __( 'Insufficient privileges to import products.', 'woocommerce' ) ) );
 		// }
-		
+		include_once ABSPATH . 'wp-includes/functions.php';
 		include_once ABSPATH . 'wp-content/plugins/woocommerce/src/Proxies/ActionsProxy.php';
 		//require ABSPATH . 'wp-admin/includes/noop.php';
 		include_once ABSPATH . 'wp-includes/plugin.php';
