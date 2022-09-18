@@ -1,0 +1,86 @@
+[11-Sep-2022 10:41:07 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 557
+[11-Sep-2022 10:59:57 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 557
+[11-Sep-2022 12:25:56 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 570
+[11-Sep-2022 12:27:53 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 573
+[11-Sep-2022 12:34:10 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 573
+[11-Sep-2022 12:35:49 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home4/smakolyk/public_html/pcwordpress/wp-includes/plugin.php on line 1013
+[11-Sep-2022 12:42:33 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php on line 791
+[11-Sep-2022 12:45:02 UTC] WordPress database error Commands out of sync; you can't run this command now for query SHOW FULL COLUMNS FROM `wp_options` made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, ActionScheduler_OptionLock->set, update_option
+[11-Sep-2022 12:45:02 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT COUNT(DISTINCT claim_id) FROM wp_actionscheduler_actions WHERE claim_id != 0 AND status IN ( 'pending', 'in-progress') made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, ActionScheduler_AsyncRequest_QueueRunner->maybe_dispatch, ActionScheduler_AsyncRequest_QueueRunner->allow, ActionScheduler_Abstract_QueueRunner->has_maximum_concurrent_batches, ActionScheduler_DBStore->get_claim_count
+[11-Sep-2022 12:45:02 UTC] WordPress database error Commands out of sync; you can't run this command now for query SELECT a.action_id FROM wp_actionscheduler_actions a WHERE 1=1 AND a.status IN ('pending') AND a.scheduled_date_gmt <= '2022-09-11 12:45:02' LIMIT 0, 5 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->maybe_dispatch_async_request, ActionScheduler_AsyncRequest_QueueRunner->maybe_dispatch, ActionScheduler_AsyncRequest_QueueRunner->allow, ActionScheduler_Store->has_pending_actions_due, ActionScheduler_DBStore->query_actions
+[12-Sep-2022 11:56:06 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 573
+[12-Sep-2022 13:05:07 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 573
+[14-Sep-2022 09:02:36 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query UPDATE `wp_actionscheduler_actions` SET `claim_id` = 0 WHERE `claim_id` = 9790 made by do_action('wp_ajax_as_async_request_queue_runner'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Async_Request->maybe_handle, ActionScheduler_AsyncRequest_QueueRunner->handle, do_action('action_scheduler_run_queue'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->run, ActionScheduler_QueueRunner->do_batch, ActionScheduler_DBStore->release_claim
+[14-Sep-2022 09:02:37 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query UPDATE `wp_actionscheduler_actions` SET `claim_id` = 0 WHERE `claim_id` = 9802 made by do_action('wp_ajax_as_async_request_queue_runner'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Async_Request->maybe_handle, ActionScheduler_AsyncRequest_QueueRunner->handle, do_action('action_scheduler_run_queue'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->run, ActionScheduler_QueueRunner->do_batch, ActionScheduler_DBStore->release_claim
+[14-Sep-2022 09:02:38 UTC] WordPress database error Deadlock found when trying to get lock; try restarting transaction for query UPDATE `wp_actionscheduler_actions` SET `claim_id` = 0 WHERE `claim_id` = 9866 made by do_action('wp_ajax_as_async_request_queue_runner'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Async_Request->maybe_handle, ActionScheduler_AsyncRequest_QueueRunner->handle, do_action('action_scheduler_run_queue'), WP_Hook->do_action, WP_Hook->apply_filters, ActionScheduler_QueueRunner->run, ActionScheduler_QueueRunner->do_batch, ActionScheduler_DBStore->release_claim
+[14-Sep-2022 09:25:28 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 573
+[14-Sep-2022 16:16:50 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 573
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:345: parser error : Opening and ending tag mismatch: towary line 31 and towar in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): 			&lt;/towar&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): 			        ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:2318: parser error : Opening and ending tag mismatch: wykazy line 30 and towary in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): 		&lt;/towary&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): 		         ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:2319: parser error : Opening and ending tag mismatch: dane line 2 and wykazy in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): 	&lt;/wykazy&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): 	         ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:2320: parser error : Extra content at the end of the document in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): &lt;/dane&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Warning:  simplexml_load_file(): ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:27:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function children() on bool in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php:388
+Stack trace:
+#0 /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php(568): createCsv(false, Resource id #251, Array, Array, Array, Array, Array)
+#1 /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/pc-market.php(117): require_once('/home4/smakolyk...')
+#2 /home4/smakolyk/public_html/pcwordpress/wp-includes/class-wp-hook.php(307): mt_toplevel_page('')
+#3 /home4/smakolyk/public_html/pcwordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 /home4/smakolyk/public_html/pcwordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /home4/smakolyk/public_html/pcwordpress/wp-admin/admin.php(259): do_action('toplevel_page_m...')
+#6 {main}
+  thrown in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 388
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:345: parser error : Opening and ending tag mismatch: towary line 31 and towar in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): 			&lt;/towar&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): 			        ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:2318: parser error : Opening and ending tag mismatch: wykazy line 30 and towary in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): 		&lt;/towary&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): 		         ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:2319: parser error : Opening and ending tag mismatch: dane line 2 and wykazy in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): 	&lt;/wykazy&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): 	         ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:2320: parser error : Extra content at the end of the document in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): &lt;/dane&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Warning:  simplexml_load_file(): ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:32:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function children() on bool in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php:388
+Stack trace:
+#0 /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php(568): createCsv(false, Resource id #1331, Array, Array, Array, Array, Array)
+#1 /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/pc-market.php(117): require_once('/home4/smakolyk...')
+#2 /home4/smakolyk/public_html/pcwordpress/wp-includes/class-wp-hook.php(307): mt_toplevel_page('')
+#3 /home4/smakolyk/public_html/pcwordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 /home4/smakolyk/public_html/pcwordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /home4/smakolyk/public_html/pcwordpress/wp-admin/admin.php(259): do_action('toplevel_page_m...')
+#6 {main}
+  thrown in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 388
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:345: parser error : Opening and ending tag mismatch: towary line 31 and towar in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): 			&lt;/towar&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): 			        ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:2318: parser error : Opening and ending tag mismatch: wykazy line 30 and towary in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): 		&lt;/towary&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): 		         ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:2319: parser error : Opening and ending tag mismatch: dane line 2 and wykazy in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): 	&lt;/wykazy&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): 	         ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): /home4/smakolyk/exp_wyk_0000_20220822174458_0005.xml:2320: parser error : Extra content at the end of the document in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): &lt;/dane&gt; in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Warning:  simplexml_load_file(): ^ in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 564
+[14-Sep-2022 16:35:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function children() on bool in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php:388
+Stack trace:
+#0 /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php(568): createCsv(false, Resource id #1332, Array, Array, Array, Array, Array)
+#1 /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/pc-market.php(117): require_once('/home4/smakolyk...')
+#2 /home4/smakolyk/public_html/pcwordpress/wp-includes/class-wp-hook.php(307): mt_toplevel_page('')
+#3 /home4/smakolyk/public_html/pcwordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters('', Array)
+#4 /home4/smakolyk/public_html/pcwordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#5 /home4/smakolyk/public_html/pcwordpress/wp-admin/admin.php(259): do_action('toplevel_page_m...')
+#6 {main}
+  thrown in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 388
+[14-Sep-2022 16:39:43 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 573
+[14-Sep-2022 16:44:55 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 573
+[14-Sep-2022 17:14:02 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home4/smakolyk/public_html/pcwordpress/wp-content/plugins/pc-market/convert2.php on line 573
