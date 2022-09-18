@@ -186,8 +186,12 @@ if($action=='echo'){
  if($action=='abs'){
 
 
-   var_dump(WC_ABSPATH);
-   var_dump(ABSPATH);
+    global $wp_scripts;
+    echo "<h2>Enqueued JS Scripts</h2><ul>";
+    foreach( $wp_scripts->queue as $handle ) :
+        echo "<li>" . $handle . "</li>";
+    endforeach;
+    echo "</ul>";
 
 
 
