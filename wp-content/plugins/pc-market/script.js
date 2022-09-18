@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
         super_var.forEach(element => {
 
             $.ajax({
-            url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/import_one.php",
+            url: ajaxurl,
             data: { 
                         "VarA": element
 
