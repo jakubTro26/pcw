@@ -51,7 +51,7 @@ function mt_toplevel_page() {
         wp_enqueue_style( 'custom-design', site_url() . '/wp-content/plugins/pc-market/design.css' );
         function register_js_files() {
 
-            wp_enqueue_script("my_ajax_script", get_template_directory_uri() . "/script.js");
+            wp_enqueue_script("my_ajax_script", site_url() . '/wp-content/plugins/pc-market/script.js');
           
           }
           add_action("wp_enqueue_scripts", "register_js_files");
