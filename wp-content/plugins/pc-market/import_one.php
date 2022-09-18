@@ -53,7 +53,7 @@ set_time_limit(600);
 
 
             ), // PHPCS: input var ok.ff
-			'update_existing' => true, // PHPCS: input var ok.
+			'update_existing' => false, // PHPCS: input var ok.
 			'lines'           => 40,
 			'parse'           => true,
 		);
