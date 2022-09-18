@@ -1,4 +1,4 @@
-
+console.log(php_vars);
         
 
 jQuery(document).ready(function($){
@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
         super_var.forEach(element => {
 
             $.ajax({
-            url: ajaxurl,
+            url: php_vars.ajaxurl,
             data: { 
                         "VarA": element
 
