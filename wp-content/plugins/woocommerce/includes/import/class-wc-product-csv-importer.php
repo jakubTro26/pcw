@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Include dependencies.
  */
-if ( ! class_exists( 'WC_Product_Importer', false ) ) {
+if ( ! class_exists( 'WC_Product_Importer' ) ) {
 	include_once dirname( __FILE__ ) . '/abstract-wc-product-importer.php';
 }
 
