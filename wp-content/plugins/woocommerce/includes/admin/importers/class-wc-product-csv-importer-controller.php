@@ -6,13 +6,14 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	echo 'kuba';
+	
 	exit;
 }
 
 
 
 if ( ! class_exists( 'WP_Importer' ) ) {
+	echo 'kuba';
 	return;
 }
 
