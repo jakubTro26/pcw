@@ -18,9 +18,10 @@ function menu(){
   
         
         wp_register_script( 'custom-scripts', site_url() . '/wp-content/plugins/pc-market/script.js' );
-    
-        
         wp_enqueue_script( 'custom-scripts' );
+
+        wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.6.1.js' );
+        wp_enqueue_script( 'jquery' );
     
 }
 
