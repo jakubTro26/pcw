@@ -1,87 +1,87 @@
 
         
+console.log(php_vars);
+
+// $(document).ready(function(){
 
 
-$(document).ready(function(){
 
 
 
+//     $(".buttons6").click(function(){
 
+//         var super_var = window.super_array;
 
-    $(".buttons6").click(function(){
+//         super_var.forEach(element => {
 
-        var super_var = window.super_array;
+//             $.ajax({
+//             url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/import_one.php",
+//             data: { 
+//                         "VarA": element
 
-        super_var.forEach(element => {
-
-            $.ajax({
-            url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/import_one.php",
-            data: { 
-                        "VarA": element
-
-                  },
-            cache: false,
-            type: "POST",
-        success: function(response) {
-            console.log(response);
+//                   },
+//             cache: false,
+//             type: "POST",
+//         success: function(response) {
+//             console.log(response);
             
-            },
-        error: function(xhr) {
-             console.log(xhr);
-            }
-            });
+//             },
+//         error: function(xhr) {
+//              console.log(xhr);
+//             }
+//             });
             
-        });
+//         });
 
-    });
+//     });
 
 
-    $(".buttons5").click(function(){
-        var main_array = window.csv;
-        var sub_arrays;
-        var count_of_arrays=main_array.length/20;
-        window.super_array=[];
+//     $(".buttons5").click(function(){
+//         var main_array = window.csv;
+//         var sub_arrays;
+//         var count_of_arrays=main_array.length/20;
+//         window.super_array=[];
     
-    for(var k=0; k<count_of_arrays;k++)
-    {
-        var array_elements=[];
-        for(var i=0;i<20;i++){
+//     for(var k=0; k<count_of_arrays;k++)
+//     {
+//         var array_elements=[];
+//         for(var i=0;i<20;i++){
 
-             var element = main_array.shift();
-             if(element!=undefined)
-             {
-                var l = array_elements.push(element);
-             }
-            if(i==19){
-                var o = window.super_array.push(array_elements);
-            }
-             }
-    }
-
-
-    });
+//              var element = main_array.shift();
+//              if(element!=undefined)
+//              {
+//                 var l = array_elements.push(element);
+//              }
+//             if(i==19){
+//                 var o = window.super_array.push(array_elements);
+//             }
+//              }
+//     }
 
 
+//     });
 
-    $(".buttons2").click(function(){
 
-        $.ajax({
-            url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/echo.php",
-            data: { 
-                        "VarA": window.csv 
 
-                  },
-            cache: false,
-            type: "POST",
-        success: function(response) {
-            console.log(response);
-            },
-        error: function(xhr) {
-             console.log(xhr);
-            }
-            });
-    });
-});
+//     $(".buttons2").click(function(){
+
+//         $.ajax({
+//             url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/echo.php",
+//             data: { 
+//                         "VarA": window.csv 
+
+//                   },
+//             cache: false,
+//             type: "POST",
+//         success: function(response) {
+//             console.log(response);
+//             },
+//         error: function(xhr) {
+//              console.log(xhr);
+//             }
+//             });
+//     });
+// });
 
 
 

@@ -49,7 +49,16 @@ function mt_toplevel_page() {
    
         add_filter( 'woocommerce_product_csv_importer_check_import_file_path', '__return_false' );
         wp_enqueue_style( 'custom-design', site_url() . '/wp-content/plugins/pc-market/design.css' );
-        wp_enqueue_script("my_ajax_script", site_url() . '/wp-content/plugins/pc-market/script.js');
+        function register_js_files() {
+
+            wp_enqueue_script("my_ajax_script", get_template_directory_uri() . "/script.js");
+            wp_localize_script("my_ajax_script", "php_vars", array(
+                  "ajaxurl" => site_url() . '/wp-content/plugins/pc-market/import_one.php',
+                  "another_var" => get_bloginfo("name")
+                )
+              );
+          }
+          add_action("wp_enqueue_scripts", "register_js_files");
       //  wp_enqueue_script( 'custom-javascript', site_url() . '/wp-content/plugins/pc-market/import.js' );
 
     if ( isset( $_GET['action'] ) ) {
