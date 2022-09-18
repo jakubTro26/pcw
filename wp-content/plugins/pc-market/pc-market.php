@@ -10,6 +10,20 @@ Author URI: ttroczynski5@gmail.com
 // Hook for adding admin menusf
 add_action('admin_menu', 'mt_add_pages');
 
+
+add_action('admin_menu', 'menu');
+
+
+function menu(){
+  
+        
+        wp_register_script( 'custom-scripts', site_url() . '/wp-content/plugins/pc-market/script.js' );
+    
+        
+        wp_enqueue_script( 'custom-scripts' );
+    
+}
+
 // action function for above hook
 function mt_add_pages() {
     
@@ -49,14 +63,7 @@ function mt_toplevel_page() {
    
         add_filter( 'woocommerce_product_csv_importer_check_import_file_path', '__return_false' );
         wp_enqueue_style( 'custom-design', site_url() . '/wp-content/plugins/pc-market/design.css' );
-        add_action( 'wp_enqueue_scripts', 'my_plugin_assets' );
-        function my_plugin_assets() {
-            
-            wp_register_script( 'custom-scripts', plugins_url( '/script.js' , __FILE__ ) );
-        
-            
-            wp_enqueue_script( 'custom-scripts' );
-        }
+     
       
 
     if ( isset( $_GET['action'] ) ) {
