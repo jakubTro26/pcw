@@ -122,6 +122,14 @@ function mt_toplevel_page() {
                 </a>
 
         </div>
+        <div class="wrapper7">
+        <a  href="<?php echo site_url(); ?>/wp-admin/admin.php?page=mt-top-level-handle&action=abs"  class="button2">
+                    <button class="buttons7">
+                        abspath
+                    </button>
+                </a>
+
+        </div>
         <script
   src="https://code.jquery.com/jquery-3.6.1.js"
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
@@ -260,6 +268,15 @@ if($action=='echo'){
  
  
  }
+ if($action=='abs'){
+
+
+   var_dump(WC_ABSPATH);
+   var_dump(ABSPATH);
+
+
+
+}
 
 
 
