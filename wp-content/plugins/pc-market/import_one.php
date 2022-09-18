@@ -2,12 +2,12 @@
 ini_set('max_execution_time', '600');
 set_time_limit(600);
 
-
+define( 'WC_ABSPATH', '/home4/smakolyk/public_html/pcwordpress/wp-content/plugins/woocommerce/' );
 
 	 function do_ajax_product_import($file) {
 		global $wpdb;
 
-
+		
 	
 		
 
