@@ -116,7 +116,7 @@ if ( ! isset( $wp_current_filter ) ) {
  *                                and functions with the same priority are executed
  *                                in the order in which they were added to the filter. Default 10.
  * @param int      $accepted_args Optional. The number of arguments the function accepts. Default 1.
- * @return true Always returns true.
+ * @return true Alfways returns true.
  */
 function add_filter( $hook_name, $callback, $priority = 10, $accepted_args = 1 ) {
 	global $wp_filter;
