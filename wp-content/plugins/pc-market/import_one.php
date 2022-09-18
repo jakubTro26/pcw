@@ -19,7 +19,7 @@ define( 'ABSPATH', '/home4/smakolyk/public_html/pcwordpress/' );
 		// }
 		
 		include_once ABSPATH . 'wp-content/plugins/woocommerce/src/Proxies/ActionsProxy.php';
-		include_once ABSPATH . 'wp-admin/includes/noop.php';
+		//include_once ABSPATH . 'wp-admin/includes/noop.php';
 		include_once ABSPATH . 'wp-includes/plugin.php';
 		include_once WC_ABSPATH . 'includes/admin/importers/class-wc-product-csv-importer-controller.php';
 		include_once WC_ABSPATH . 'includes/import/class-wc-product-csv-importer.php';
