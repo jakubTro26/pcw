@@ -1,6 +1,6 @@
 
         
-console.log(php_vars);
+console.log('kuba');
 
 // $(document).ready(function(){
 
