@@ -4,7 +4,25 @@
 jQuery(document).ready(function($){
 
 
+    $(".buttons8").click(function(){
 
+        $.ajax({
+            url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/convert2.php",
+            cache: false,
+            type: "GET",
+        success: function(response) {
+            console.log(response);
+            
+            },
+        error: function(xhr) {
+             console.log(xhr);
+            }
+            });
+
+
+
+    });
+    
 
 
     $(".buttons6").click(function(){
