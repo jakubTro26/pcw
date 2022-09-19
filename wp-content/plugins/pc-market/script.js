@@ -28,7 +28,10 @@ jQuery(document).ready(function($){
                 },
             error: function(xhr) {
                  console.log(xhr);
-                }
+                },
+                complete: function(xhr, textStatus) {
+                    console.log(xhr.status);
+                } 
                 });
                
 
