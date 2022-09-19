@@ -16,27 +16,12 @@ while (false !== ($entry = readdir($handle))) {
 
 
 
-echo '
-<script>
-window.csv=[];
-</script>
-';
 
 
-foreach($entries as $entry){
 
-echo '
-<script>
-window.csv.push("'. $entry .'");
-</script>
-';
-
-}
+var_dump($entries);
 
 
-wp_localize_script("ajax-script", "php_vars", array(
-      "entries" => $entries
-    )
-  );
+
 
 ?>
