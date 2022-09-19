@@ -19,8 +19,22 @@ jQuery(document).ready(function($){
         complete: function(data) {
 
                 if(data.status==200){
-                    console.log('kuba');
+                    $.ajax({
+                        url: "https://smakolyk.nstrefa.pl/pcwordpress/wp-content/plugins/pc-market/dir.php",
+                        cache: false,
+                        type: "GET",
+                    success: function(response) {
+                        console.log(response);
+                        },
+                    error: function(xhr) {
+                         console.log(xhr);
+                        },
+                    complete: function(data) {
+                        console.log(data);
 
+
+                        } 
+                        });
                 }
 
             }
