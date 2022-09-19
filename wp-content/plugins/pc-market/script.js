@@ -18,7 +18,10 @@ jQuery(document).ready(function($){
             },
         complete: function(data) {
 
-            console.log(data);
+                if(data.status==200){
+                    console.log('kuba');
+
+                }
 
             }
             });
