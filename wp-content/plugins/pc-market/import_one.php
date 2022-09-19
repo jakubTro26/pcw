@@ -167,7 +167,7 @@ foreach($var as $v){
 do_ajax_product_import($string);
 
     
-// }
+ }
 
 
 
