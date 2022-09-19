@@ -15,6 +15,11 @@ jQuery(document).ready(function($){
             },
         error: function(xhr) {
             
+            },
+        complete: function(data) {
+
+            console.log(data);
+
             }
             });
                         
