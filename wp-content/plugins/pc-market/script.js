@@ -30,7 +30,7 @@ jQuery(document).ready(function($){
                          console.log(xhr);
                         },
                     complete: function(data) {
-                        console.log(data);
+                        console.log(data.responseText);
 
 
                         } 
