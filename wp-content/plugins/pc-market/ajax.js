@@ -1,0 +1,1 @@
+console.log(php_vars.entries);

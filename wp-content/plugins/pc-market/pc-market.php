@@ -30,6 +30,9 @@ function menu(){
               "another_var" => get_bloginfo("name")
             )
           );
+
+          wp_register_script( 'ajax-script', site_url() . '/wp-content/plugins/pc-market/ajax.js' );
+       
     
 }
 

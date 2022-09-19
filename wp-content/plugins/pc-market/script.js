@@ -23,9 +23,7 @@ jQuery(document).ready(function($){
                 cache: false,
                 type: "GET",
             success: function(response) {
-                console.log('kuba');
-
-                console.log(response);
+                
 
 
                 
