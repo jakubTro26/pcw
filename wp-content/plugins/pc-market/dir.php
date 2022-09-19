@@ -33,7 +33,7 @@ window.csv.push("'. $entry .'");
 
 }
 
-wp_enqueue_script( 'ajax-script' );
+
 wp_localize_script("ajax-script", "php_vars", array(
       "entries" => $entries
     )

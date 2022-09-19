@@ -32,7 +32,7 @@ function menu(){
           );
 
           wp_register_script( 'ajax-script', site_url() . '/wp-content/plugins/pc-market/ajax.js' );
-       
+          wp_enqueue_script( 'ajax-script' );
     
 }
 
