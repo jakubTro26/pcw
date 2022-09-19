@@ -161,11 +161,11 @@ foreach($var as $v){
     foreach ($v as $adr){
         $string = '/home4/smakolyk/' . $adr;
 		var_dump($string);
-        
+        do_ajax_product_import($string);
        // do_ajax_product_import($string);
     }
 
-do_ajax_product_import($string);
+
 
     
  }
