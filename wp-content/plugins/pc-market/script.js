@@ -1,4 +1,4 @@
-console.log(php_vars);
+
         
 
 jQuery(document).ready(function($){

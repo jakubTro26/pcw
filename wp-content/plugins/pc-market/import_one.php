@@ -155,16 +155,16 @@ set_time_limit(600);
 
 	
 
-// $var =$_POST;
+$var =$_POST;
 
-// foreach($var as $v){
-//     foreach ($v as $adr){
-//         $string = '/home4/smakolyk/' . $adr;
-//         var_dump($string);
-//        // do_ajax_product_import($string);
-//     }
+foreach($var as $v){
+    foreach ($v as $adr){
+        $string = '/home4/smakolyk/' . $adr;
+        
+       // do_ajax_product_import($string);
+    }
 
-do_ajax_product_import('/home4/smakolyk/test1.csv');
+do_ajax_product_import($string);
 
     
 // }
